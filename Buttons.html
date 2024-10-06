@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Double The Size</title>
+    <style>
+        .btn-crazy{
+            height: 20px;
+            width: 100px;
+            background-color: red;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+        .double-size{
+            height: 40px;
+            width: 200px;
+            font-size: 30px;
+          
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-crazy" >crazy</button>
+
+     <script>
+        let buttonElement = document.querySelector('.btn-crazy');
+          buttonElement.addEventListener('click',event=>{
+            setTimeout(doubleSize,2000);
+          })
+             function doubleSize() { 
+               let buttonElement = document.querySelector('.btn-crazy');
+               buttonElement.classList.add('double-size');
+             }
+             
+     </script>
+    
+</body>
+</html>
