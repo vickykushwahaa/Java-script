@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Set Time</title>
+</head>
+<body>
+    <script>
+        let alarm = () =>  
+            console.log(`Break Fast kar lo ${new Date}`);
+           
+       let timerID=setTimeout(alarm,2000);
+       console.log('Break Fast kar lo');
+       setTimeout(timerID,1000);
+
+       let intervalId = setInterval(alarm,3000);
+       setTimeout(()=>clearInterval(intervalId),6000)
+
+    </script>
+    
+</body>
+</html>

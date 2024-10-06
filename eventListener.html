@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Evernt Listener</title>
+</head>
+<body>
+    <button id="button">Click_ME</button>
+    <script>
+        let buttonElement = document.querySelector('#button');
+        let behaviar = event =>console.log('i have clicked');
+        buttonElement.addEventListener('click',behaviar);
+        let printDate = event => console.log(new Date);
+        buttonElement.addEventListener('click',printDate);
+    </script>
+    
+</body>
+</html>
